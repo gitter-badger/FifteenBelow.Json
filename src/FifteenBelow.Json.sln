@@ -7,6 +7,11 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FifteenBelow.Json", "Fiftee
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FifteenBelow.Json.Tests", "FifteenBelow.Json.Tests\FifteenBelow.Json.Tests.fsproj", "{E8030C60-B1F9-4913-A610-0EF109C6B856}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A91BF56-0394-4C6A-8200-B6568ED37CA3}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
