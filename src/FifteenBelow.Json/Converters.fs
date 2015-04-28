@@ -86,11 +86,17 @@ module internal Common =
  
             let rec read index data =
                 match tokenType () with
-                | JsonToken.StartArray ->
-                    ignore ()
-                    read index data
                 | JsonToken.EndArray ->
                     data
+                | JsonToken.StartArray ->
+                    ignore ()
+                    match tokenType () with
+                    | JsonToken.EndArray ->
+                        data
+                    | _ ->
+                        let value = deserialize (next (index))
+                        ignore ()
+                        read (index + 1) (data @ [value])
                 | _ ->
                     let value = deserialize (next (index))
                     ignore ()
