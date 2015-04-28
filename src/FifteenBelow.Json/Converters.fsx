@@ -60,4 +60,3 @@ let x' = JsonConvert.SerializeObject(value', settings)
 JsonConvert.DeserializeObject<Test>(x', settings)
 type MyDU = MyCase of int[]
 JsonConvert.SerializeObject(MyCase [|1;2;3|], settings)
-JsonSerializer.CreateDefault()
