@@ -11,8 +11,8 @@ open System.Runtime.InteropServices
 [<assembly: AssemblyCopyright("Copyright © 15below Ltd 2013")>]
 [<assembly: AssemblyTrademark("")>]
 
-[<assembly: AssemblyVersion("0.1.0.0")>]
-[<assembly: AssemblyFileVersion("0.1.0.0")>]
+[<assembly: AssemblyVersion("0.2.0.0")>]
+[<assembly: AssemblyFileVersion("0.2.0.0")>]
 
 [<assembly: ComVisible(false)>]
 

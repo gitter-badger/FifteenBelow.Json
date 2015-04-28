@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FifteenBelow.Json", "FifteenBelow.Json\FifteenBelow.Json.fsproj", "{0C89A8D2-1BCC-41CE-9FE6-7779F9DFF8CA}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FifteenBelow.Json.Tests", "FifteenBelow.Json.Tests\FifteenBelow.Json.Tests.fsproj", "{E8030C60-B1F9-4913-A610-0EF109C6B856}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A91BF56-0394-4C6A-8200-B6568ED37CA3}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,10 @@ Global
 		{0C89A8D2-1BCC-41CE-9FE6-7779F9DFF8CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C89A8D2-1BCC-41CE-9FE6-7779F9DFF8CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C89A8D2-1BCC-41CE-9FE6-7779F9DFF8CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8030C60-B1F9-4913-A610-0EF109C6B856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8030C60-B1F9-4913-A610-0EF109C6B856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8030C60-B1F9-4913-A610-0EF109C6B856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8030C60-B1F9-4913-A610-0EF109C6B856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

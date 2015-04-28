@@ -83,18 +83,23 @@ module internal Common =
             let! tokenType = flip tokenType
             let! ignore = flip ignore
             let! deserialize = flip deserialize
- 
-            let rec read index data =
+
+            let rec inner index data =
                 match tokenType () with
-                | JsonToken.StartArray ->
-                    ignore ()
-                    read index data
                 | JsonToken.EndArray ->
                     data
                 | _ ->
                     let value = deserialize (next (index))
                     ignore ()
                     read (index + 1) (data @ [value])
+ 
+            and read index data =
+                match tokenType () with
+                | JsonToken.StartArray ->
+                    ignore ()
+                    inner index data
+                | _ ->
+                    inner index data
  
             return read 0 List.empty |> Array.ofList }
 
