@@ -1,5 +1,7 @@
 # FifteenBelow.Json
 
+[![Join the chat at https://gitter.im/15below/FifteenBelow.Json](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/15below/FifteenBelow.Json?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Overview
 
 FifteenBelow.Json provides a set of `JsonConverter` types for the Newtonsoft.Json library, focused on providing _idiomatic_ serialization of common F# types. While Newtonsoft.Json is progressing native support for F#, we feel that the JSON structures emitted by these converters are slightly more human friendly (where possible).
